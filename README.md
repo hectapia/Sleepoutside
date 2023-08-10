@@ -5,8 +5,12 @@
 Use this as a starting point to complete the WDD 330 team activity: the SleepOutside web application. It scaffolds out a simple web app with Vite support to bundle up our assets.
 
 https://64c2059881a48f530327acc1--flourishing-elf-08dd55.netlify.app/
-https://deploy-preview-2--flourishing-elf-08dd55.netlify.app/
+
+https://deploy-preview-2--flourishing-elf-08dd55.netlify.app/ 
+
 https://deploy-preview-3--flourishing-elf-08dd55.netlify.app/
+
+
 
 ## Prerequisites
 
