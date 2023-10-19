@@ -5,6 +5,7 @@ import { findProductById } from "./productData.mjs";
 const productId = getParam("product");
 productDetails(productId);
 
+
 function addProductToCart(product) {
   setLocalStorage("so-cart", product);
 }
@@ -19,3 +20,4 @@ document
   .getElementById("addToCart")
   .addEventListener("click", addToCartHandler);
  
+
