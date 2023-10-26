@@ -11,7 +11,13 @@ export function qs(selector, parent = document) {
   }
   // save data to local storage
   export function setLocalStorage(key, data) {
-    localStorage.setItem(key, JSON.stringify(data));
+    let item = localStorage.getItem(key);//get the item that is added to the cart. 
+    let soCart = JSON.parse(item); // parses string and returns a JavaScript object.
+    if (soCart == null) {
+      soCart = [];
+    }
+    soCart.push(data); //add the data fro the item to the array. 
+    localStorage.setItem(key, JSON.stringify(soCart));//storage that array in a string.
   }
   // set a listener for both touchend and click
   export function setClick(selector, callback) {
@@ -20,4 +26,10 @@ export function qs(selector, parent = document) {
       callback();
     });
     qs(selector).addEventListener("click", callback);
+  }
+
+  export function getParam(param) {
+    const queryString = window.location.search;
+    const urlParams = new URLSearchParams(queryString);
+    return urlParams.get(param);
   }
